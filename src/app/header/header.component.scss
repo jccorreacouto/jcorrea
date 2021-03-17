@@ -1,0 +1,24 @@
+@import './../../styles/variables.scss';
+
+.nav-white {
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: $white;
+
+    .logo {
+        cursor: pointer;
+        width: 160px !important;
+        height: 50px !important;
+    }
+
+    p {
+        margin-top: 1%;
+        text-align: center;
+        font-weight: bold;
+        color: $blue-3;
+        font-family: $font-montserrat;
+    }
+}
