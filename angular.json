@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "jcorrea"
+    }
+  },
+  "defaultProject": "jcorrea",
+  "cli": {
+    "analytics": "76557170-0413-4015-a687-84e2e2bad632"
+  }
 }
