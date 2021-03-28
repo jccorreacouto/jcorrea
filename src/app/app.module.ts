@@ -1,5 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { CUSTOM_ELEMENTS_SCHEMA, LOCALE_ID, NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { TextFieldModule } from '@angular/cdk/text-field';
+import { MatButtonModule } from '@angular/material/button';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,6 +20,7 @@ import { ContatoComponent } from './contato/contato.component';
 import { ProdutoComponent } from './produto/produto.component';
 import { EmpresaComponent } from './empresa/empresa.component';
 
+
 registerLocaleData(localePt, 'pt');
 
 @NgModule({
@@ -28,11 +34,16 @@ registerLocaleData(localePt, 'pt');
     EmpresaComponent
   ],
   imports: [
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    TextFieldModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'pt' },
