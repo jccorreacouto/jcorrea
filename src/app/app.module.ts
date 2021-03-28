@@ -8,6 +8,12 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatCardModule } from '@angular/material/card';
+import { ContatoComponent } from './contato/contato.component';
+import { ProdutoComponent } from './produto/produto.component';
+import { EmpresaComponent } from './empresa/empresa.component';
 
 registerLocaleData(localePt, 'pt');
 
@@ -16,11 +22,17 @@ registerLocaleData(localePt, 'pt');
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ContatoComponent,
+    ProdutoComponent,
+    EmpresaComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatCardModule
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'pt' },
