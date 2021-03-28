@@ -48,3 +48,19 @@ header {
         }
     }
 }
+
+@media (max-width: 768px) {
+
+    .mat-toolbar-row {
+        padding: 0 !important;
+    }
+    
+    .img-fluid {
+        padding-top: 5px;
+        max-width: 80%;
+    }
+
+    .contato, .empresa, .produto { 
+        font-size: 12px !important;
+    }
+}
