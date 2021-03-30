@@ -9,4 +9,4 @@ The app will automatically reload if you change any of the source files.
 Run `ng build --prod` to build the project. The build artifacts will be stored in the `dist/` directory.
 
 ## Firebase Deploy
-Run `firebase deploy` to deploy in [JCorrâa - Ráfia Packing](https://jcorrea.web.app/)
+Run `firebase deploy` to deploy in [JCorrêa - Ráfia Packing](https://jcorrea.web.app/)

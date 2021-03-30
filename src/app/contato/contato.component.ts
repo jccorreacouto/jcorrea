@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { IMensagem } from '../shared/model/mensagem';
+import { EmailService } from '../shared/service/email.service';
 
 @Component({
   selector: 'app-contato',
@@ -15,7 +16,7 @@ export class ContatoComponent {
     mensagem: ['', Validators.compose([Validators.minLength(10)])]
   });
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder, private mailService: EmailService) { }
 
   public enviarEmail(): void {
     const mensagem: IMensagem = {
@@ -23,7 +24,7 @@ export class ContatoComponent {
       titulo: this.formContato.controls.titulo.value,
       mensagem: this.formContato.controls.mensagem.value
     };
-    console.log(mensagem);
+    this.mailService.enviarEmail(mensagem);
     this.limparCampos();
   }
 
