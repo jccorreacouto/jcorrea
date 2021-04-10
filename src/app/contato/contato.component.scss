@@ -1,8 +1,48 @@
+
 .container {
 
-    margin-top: 3%;
+    margin-top: 2%;
+    height: 100vh;
+
+    p {
+        text-align: center;
+        font-weight: 500;
+        font-size: 16px;
+        padding-bottom: 15px;
+    }
 
     .mat-form-field {
         width: 400px !important;
+    }
+
+    .email {
+        height: 150px;
+    }
+
+    .btn {
+        margin-bottom: 30px;
+    }
+
+    .fa-whatsapp {
+        color: #128C7E;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+
+        margin-top: 20px;
+        height: 100vh;
+    
+        p {
+            text-align: center;
+            font-weight: 500;
+            font-size: 14px;
+            padding-bottom: 15px;
+        }
+    
+        .email {
+            height: 100px;
+        }
     }
 }

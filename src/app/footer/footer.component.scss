@@ -1,0 +1,28 @@
+@import './../../styles/variables.scss';
+
+.footer {
+    padding-top: 10px;
+    background-color: $black2;
+    height: 90px;
+    color: $white;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding-top: 10px;
+        background-color: $black2;
+        height: 90px;
+        color: $white;
+        text-align: center;
+        font-size: 14px;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+}

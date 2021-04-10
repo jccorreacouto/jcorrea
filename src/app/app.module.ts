@@ -19,9 +19,11 @@ import { MatCardModule } from '@angular/material/card';
 import { ContatoComponent } from './contato/contato.component';
 import { ProdutoComponent } from './produto/produto.component';
 import { EmpresaComponent } from './empresa/empresa.component';
-
+import { NgxMaskModule, IConfig } from 'ngx-mask';
 
 registerLocaleData(localePt, 'pt');
+
+export const options: Partial<IConfig> | (() => Partial<IConfig>) = null;
 
 @NgModule({
   declarations: [
@@ -43,7 +45,8 @@ registerLocaleData(localePt, 'pt');
     BrowserAnimationsModule,
     MatToolbarModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    NgxMaskModule.forRoot()
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'pt' },

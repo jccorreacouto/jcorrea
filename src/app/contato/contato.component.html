@@ -1,11 +1,34 @@
 <div class="container">
+    <div class="row">
+        <div class="col">
+            <p>Envie-nos um email descrevendo sua necessidade:</p>
+        </div>
+    </div>
     <form [formGroup]="formContato" (ngSubmit)="enviarEmail()">
         <div class="row">
             <div class="col d-flex justify-content-center">
                 <mat-form-field appearance="outline">
-                    <mat-label>Email</mat-label>
+                    <mat-label>Seu nome</mat-label>
+                    <input matInput type="text" formControlName="nome">
+                    <mat-error>Por favor, nos diga seu nome</mat-error>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <mat-form-field appearance="outline">
+                    <mat-label>Seu e-mail</mat-label>
                     <input matInput type="text" formControlName="email">
                     <mat-error>Por favor, informe o email para contato.</mat-error>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <mat-form-field appearance="outline">
+                    <mat-label>Seu telefone</mat-label>
+                    <input matInput type="text" formControlName="telefone" mask="(00) 0 0000-0000">
+                    <mat-error>Por favor, informe o telefone para contato.</mat-error>
                 </mat-form-field>
             </div>
         </div>
@@ -22,7 +45,7 @@
             <div class="col d-flex justify-content-center">
                 <mat-form-field appearance="outline">
                     <mat-label>Mensagem</mat-label>
-                    <textarea matInput cdkTextareaAutosize cdkAutosizeMinRows="1" cdkAutosizeMaxRows="10" formControlName="mensagem"></textarea>
+                    <textarea matInput cdkTextareaAutosize cdkAutosizeMinRows="1" cdkAutosizeMaxRows="10" formControlName="mensagem" class="email"></textarea>
                     <mat-error>Por favor, informe a mensagem.</mat-error>
                 </mat-form-field>
             </div>
@@ -35,4 +58,13 @@
             </div>
         </div>
     </form>
+    <div class="row">
+        <div class="col">
+            <p>Ou entre em contato conosco pelo WhatsApp:
+                <a href="{{ whatsAppUrl }}">
+                    <i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i>
+                </a>
+            </p>
+        </div>
+    </div>
 </div>
