@@ -1,3 +1,62 @@
+@import './../../styles/variables.scss';
+
 .container {
-    height: auto;
+
+    height: 100vh;
+    max-width: 1024px;
+    margin-bottom: 20%;
+
+    .title {
+        margin-top: 5%;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    img {
+        border-radius: 8px;
+        scale: 0.8;
+    }
+
+    .images {
+        margin-top: 1%;
+
+        .row {
+            padding: 0;
+            margin: 0;
+        }
+
+        .col {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .subtitle {
+        margin-top: 2%;
+        margin-bottom: 15%;
+        font-size: 30px;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .container {
+
+        .title {
+            margin-top: 5%;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .subtitle {
+            margin-top: 2%;
+            margin-bottom: 15%;
+            font-size: 16px;
+            text-align: center;
+        }
+    
+    }
+
 }
