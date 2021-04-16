@@ -20,6 +20,7 @@ import { ContatoComponent } from './contato/contato.component';
 import { ProdutoComponent } from './produto/produto.component';
 import { EmpresaComponent } from './empresa/empresa.component';
 import { NgxMaskModule, IConfig } from 'ngx-mask';
+import { LightboxModule } from 'ngx-lightbox';
 
 registerLocaleData(localePt, 'pt');
 
@@ -46,7 +47,8 @@ export const options: Partial<IConfig> | (() => Partial<IConfig>) = null;
     MatToolbarModule,
     MatCardModule,
     MatButtonModule,
-    NgxMaskModule.forRoot()
+    NgxMaskModule.forRoot(),
+    LightboxModule
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'pt' },
