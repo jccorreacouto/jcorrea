@@ -1,7 +1,7 @@
 .container {
     margin-top: 3%;
     max-width: 1024px;
-    height: 100vh;
+    height: 55vh !important;
 
     h3 {
         font-weight: bold;
@@ -11,4 +11,13 @@
     p {
         text-align: justify;
     }
+}
+
+@media (max-width: 768px) {
+
+    .container {
+
+        height: 90vh !important;
+    }
+
 }

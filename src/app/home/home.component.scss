@@ -8,8 +8,9 @@
 
     .title {
         margin-top: 5%;
-        font-size: 30px;
+        font-size: 35px;
         text-align: center;
+        font-weight: 700;
     }
 
     img {
@@ -37,8 +38,10 @@
     .subtitle {
         margin-top: 2%;
         margin-bottom: 15%;
-        font-size: 30px;
+        font-size: 40px;
         text-align: center;
+        font-family: $font-sniglet;
+        font-weight: 700;
     }
 
 }
@@ -49,14 +52,14 @@
 
         .title {
             margin-top: 5%;
-            font-size: 16px;
+            font-size: 18px;
             text-align: center;
         }
 
         .subtitle {
             margin-top: 2%;
             margin-bottom: 15%;
-            font-size: 16px;
+            font-size: 22px;
             text-align: center;
         }
     
