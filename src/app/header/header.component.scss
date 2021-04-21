@@ -5,7 +5,7 @@ header {
 }
 
 .card {
-    background-color: $grey1;
+    background-color: $grey2 !important;
     max-width: 1024px;
     width: 100%;
     height: 90px;
@@ -14,7 +14,7 @@ header {
     display: flex;
 
     .toolbar {
-        background-color: $grey1 !important;
+        background-color: $grey2 !important;
         padding-left: 2% !important;
         padding-right: 2% !important;
         margin: auto;
@@ -50,23 +50,25 @@ header {
 @media (max-width: 768px) {
 
     .card {
-        height: 70px !important;
-    }
+            background-color: $grey2 !important;
+            height: 70px !important;
+        }
 
-    .mat-toolbar-row {
-        padding: 0 !important;
-    }
+        .mat-toolbar-row {
+            padding: 0 !important;
+        }
 
-    .toolbar {
-        margin-top: -10px !important;
-    }
-    
-    .img-fluid {
-        padding-top: 5px;
-        max-width: 80%;
-    }
+        .toolbar {
+            margin-top: -7px !important;
+            background-color: $grey2 !important;
+        }
+        
+        .img-fluid {
+            padding-top: 5px;
+            max-width: 80%;
+        }
 
-    .contato, .empresa, .produto { 
-        font-size: 12px !important;
+        .contato, .empresa, .produto { 
+            font-size: 12px !important;
+        }
     }
-}
