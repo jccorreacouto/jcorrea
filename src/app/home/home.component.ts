@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Lightbox } from 'ngx-lightbox';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-home',
@@ -21,6 +22,14 @@ export class HomeComponent {
   public produto11 = './../../assets/imgs/produto11.jpeg';
   public produto12 = './../../assets/imgs/produto12.jpeg';
 
+  public googleMapsUrl: string = environment.googleMapsUrl;
+
+  public whatsAppUrl: string = environment.whatsAppApi;
+
+  public gmail: string = 'mailto:' + environment.emailTo;
+
+  public instagramUrl: string = environment.instagramUrl;
+
   constructor(private lightbox: Lightbox) { }
 
   public open(img: any): void {
@@ -39,40 +48,28 @@ export class HomeComponent {
     switch (nr) {
       case 1:
         return this.produto1;
-        break;
       case 2:
         return this.produto2;
-        break;
       case 3:
         return this.produto3;
-        break;
       case 4:
         return this.produto4;
-        break;
       case 5:
         return this.produto5;
-        break;
       case 6:
         return this.produto6;
-        break;
       case 7:
         return this.produto7;
-        break;
       case 8:
         return this.produto8;
-        break;
       case 9:
         return this.produto9;
-        break;
       case 10:
         return this.produto10;
-        break;
       case 11:
         return this.produto11;
-        break;
       case 12:
         return this.produto12;
-        break;
     }
   }
 

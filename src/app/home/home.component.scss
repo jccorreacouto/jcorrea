@@ -2,15 +2,18 @@
 
 .container {
 
-    height: 100vh;
     max-width: 1024px;
-    margin-bottom: 20%;
+    padding-bottom: 10% !important;
 
-    .title {
-        margin-top: 5%;
+    .titulo {
         font-size: 35px;
-        text-align: center;
         font-weight: 700;
+    }
+
+    .descricao {
+        margin-left: 15px;
+        font-size: 25px;
+        font-weight: 500;
     }
 
     img {
@@ -37,11 +40,33 @@
 
     .subtitle {
         margin-top: 2%;
-        margin-bottom: 15%;
+        margin-bottom: 5%;
         font-size: 40px;
         text-align: center;
         font-family: $font-sniglet;
         font-weight: 700;
+    }
+
+    .alinhamento {
+        margin-left: 32%;
+    }
+
+    .icone {
+        cursor: pointer;
+        width: 35px !important;
+        height: 35px !important;
+        margin-right: 15px;
+    }
+
+    .indicador {
+        width: 43px !important;
+        height: 35px !important;
+        margin-right: 15px !important;
+    }
+
+    .contato {
+        font-size: 16px;
+        font-weight: 500;
     }
 
 }
@@ -50,17 +75,48 @@
 
     .container {
 
-        .title {
-            margin-top: 5%;
+        height: auto !important;
+        min-height: 100vh;
+        max-width: 360px;
+        margin-bottom: 5%;
+
+        .titulo {
             font-size: 18px;
-            text-align: center;
+            font-weight: 700;
+        }
+
+        .descricao {
+            font-size: 12px;
+            font-weight: 500;
         }
 
         .subtitle {
             margin-top: 2%;
-            margin-bottom: 15%;
+            margin-bottom: 10%;
             font-size: 22px;
             text-align: center;
+        }
+
+        .alinhamento {
+            margin-left: 8%;
+        }
+    
+        .icone {
+            cursor: pointer;
+            width: 25px !important;
+            height: 25px !important;
+            margin-right: 10px;
+        }
+
+        .indicador {
+            width: 32px !important;
+            height: 25px !important;
+            margin-right: 5px !important;
+        }
+    
+        .contato {
+            font-size: 14px;
+            font-weight: 500;
         }
     
     }

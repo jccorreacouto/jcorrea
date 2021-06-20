@@ -7,7 +7,7 @@ import { ProdutoComponent } from './produto/produto.component';
 
 const APP_ROUTES: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'home', component: HomeComponent },
+  { path: 'inicio', component: HomeComponent },
   { path: 'contato', component: ContatoComponent },
   { path: 'produto', component: ProdutoComponent },
   { path: 'empresa', component: EmpresaComponent },
