@@ -25,6 +25,11 @@
     .images {
         margin-top: 1%;
 
+        .img-size {
+            width: 190px !important;
+            height: 190px !important;
+        }
+
         .row {
             padding: 0;
             padding-bottom: 15px;
@@ -88,6 +93,14 @@
         .descricao {
             font-size: 12px;
             font-weight: 500;
+        }
+
+        .images {
+    
+            .img-size {
+                width: 55px !important;
+                height: 55px !important;
+            }
         }
 
         .subtitle {
